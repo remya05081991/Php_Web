@@ -26,15 +26,19 @@ if(mysqli_connect_error())
 }
 else
 {
-    $sql = "select * from login where username ='".$username."'";
+    $sql = "select * from login where username ='$username' and password = '$password'";
+    $result = mysqli_query($conn, $sql);
 }
-if ($conn->query($sql))
+
+if (mysqli_num_rows($result)===1)
 {
     echo "Login Successfully";
+    
 }
 else
 {
     echo  "Login Failed";
+    
 }
 $conn->close();
 ?>
