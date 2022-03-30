@@ -32,12 +32,12 @@ else
 
 if (mysqli_num_rows($result)===1)
 {
-    echo "Login Successfully!!";
+    echo "Login Successfully!!!";
     
 }
 else
 {
-    echo  "Login Failed!!";
+    echo  "Login Failed!!!";
     
 }
 $conn->close();
