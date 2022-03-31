@@ -6,10 +6,13 @@ $password = filter_input(INPUT_POST, 'password');
 
 if(!empty($username)){
 if(!empty($password)){
-    
+
  // $host = "unitear-connection-pool-test.mysql.database.azure.com";
  // $dbusername = "uniteartestdb@unitear-connection-pool-test";
  // $dbpassword = "JYl#5r2rd2$H";
+
+
+ 
   $host = "localhost";
   $dbusername = "root";
   $dbpassword = "";
