@@ -20,10 +20,10 @@ if(!empty($password)){
 }
 else{
     die();
-}
+    }
 }
 else{
-die();
+    die();
 }
 
 $conn = new mysqli($host, $dbusername, $dbpassword, $dbname);
